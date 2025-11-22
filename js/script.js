@@ -1,15 +1,11 @@
-// Seleção de elementos HTML (Setup Inicial)
 let cardContainer = document.querySelector(".card-container");
 let campoBusca = document.querySelector("header input");
 let dados = [];
 
-// Função que inicia a busca de dados e filtra os resultados
 async function iniciarBusca() {
-    // Busca os dados do JSON apenas na primeira vez (cache)
     if (dados.length === 0) {
         try {
             let resposta = await fetch("data.json");
-            // Verifica se a resposta foi bem-sucedida
             if (!resposta.ok) {
                 throw new Error(`Erro HTTP: ${resposta.status}`);
             }
@@ -21,7 +17,6 @@ async function iniciarBusca() {
         }
     }
 
-    // Processo de filtragem
     const termoBusca = campoBusca.value.toLowerCase();
     const dadosFiltrados = dados.filter(dado => 
         dado.nome.toLowerCase().includes(termoBusca) ||
@@ -31,7 +26,6 @@ async function iniciarBusca() {
     renderizarCards(dadosFiltrados);
 }
 
-// Função que cria e exibe os cards no HTML
 function renderizarCards(dados) {
     cardContainer.innerHTML = "";
     if (dados.length === 0) {
@@ -50,11 +44,5 @@ function renderizarCards(dados) {
     }
 }
 
-// --- NOVO CÓDIGO PARA INICIAR A BUSCA AO CARREGAR A PÁGINA ---
-
-// 1. Chama a função iniciarBusca() assim que o DOM (HTML) estiver totalmente carregado.
 document.addEventListener('DOMContentLoaded', iniciarBusca);
-
-// 2. Adiciona um Listener ao campo de busca para acionar a função iniciarBusca()
-//    sempre que o usuário digitar (evento 'input').
 campoBusca.addEventListener('input', iniciarBusca);
