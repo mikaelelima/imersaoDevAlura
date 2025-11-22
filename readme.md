@@ -50,6 +50,7 @@ A ideia é oferecer uma visão clara, simples e acessível, facilitando a escolh
 ## 🚀 Como acessar
 
 Basta abrir o site no navegador e navegar pelas áreas listadas.
+
 Link do site: https://mikaelelima.github.io/imersaoDevAlura/
 
 ---
