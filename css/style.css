@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); /* Importa a fonte Quicksand do Google Fonts */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Cor primária (azul claro) */
+    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
+    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --card-bg-color: #3c4043; /* Fundo mais escuro para os cards */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte */
+}
+
+header {
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    z-index: 10;
+    border-bottom: 1px solid var(--card-bg-color); /* Usando a cor de card para a borda */
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 2.0rem;
+    margin: 0;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--tertiary-color);
+    margin: 0 0 1rem 0; /* Espaçamento ajustado */
+    text-align: center;
+    max-width: 80%;
+}
+
+div input {
+    padding: 0.375rem 0.75rem;
+    border-radius: 1rem;
+    border: 1px solid var(--tertiary-color);
+    background: var(--bg-color);
+    font-family: inherit;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    width: 25rem;
+    color: var(--secondary-color);
+    margin: 0 .5rem .5rem 0;
+}
+
+div input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--tertiary-color);
+}
+
+div input:focus {
+    outline: none;
+    border-color: var(--primary-color); /* Ajustado para primário no foco */
+    box-shadow: 0 0 0 0.1rem var(--primary-color);
+}
+
+#botao-busca {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: var(--card-bg-color); /* Cor de fundo ajustada para card */
+    color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color); /* Adiciona uma borda sutil */
+}
+
+#botao-busca:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 0 0.1rem var(--primary-color);
+}
+
+#botao-busca:active {
+    transform: scale(0.98);
+}
+
+/* --- REGRAS PARA O LAYOUT DE 4 COLUNAS --- */
+main {
+    max-width: 90rem; /* Largura maior para acomodar 4 colunas */
+    margin: 2rem auto; /* Centraliza e adiciona margem no topo */
+    padding: 0 1rem;
+    
+    
+    gap: 1.5rem; /* Espaçamento entre os cards */
+
+    /* Altura removida e substituída por min-height para garantir que o conteúdo não seja cortado */
+    min-height: calc(100vh - 10rem); 
+}
+
+.card-container {
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de largura igual */
+    gap: 1.5rem;
+}
+
+.label-tecnologia {
+    color: var(--primary-color); 
+    font-weight: 400; /* Opcional: para dar mais destaque e peso */
+    margin-right: 0.25rem; /* Opcional: um pequeno espaço após os dois pontos */
+}
+/* --- REGRAS PARA ESTILIZAR CADA ITEM COMO UM CARD --- */
+article {
+    background: var(--card-bg-color); /* Fundo escuro para o card */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 1.25rem; /* Espaçamento interno */
+    margin-bottom: 0; /* Remove a margem inferior redundante do grid */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para profundidade */
+    border-bottom: none; /* Remove a borda inferior antiga */
+    
+    /* Efeitos de hover e transição */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-5px); /* Efeito de levantar */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais forte no hover */
+    cursor: pointer; 
+}
+
+/* Mantendo os estilos de texto */
+article h2 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+article p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+}
+
+article p:first-of-type { 
+    margin-bottom: 1.2rem; /* Aumenta o espaçamento após a descrição principal */
+}
+
+article p strong {
+    color: var(--tertiary-color);
+    font-weight: 400;
+}
+
+article a {
+    color: var(--primary-color); 
+    text-decoration: none;
+    font-weight: 500; 
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* --- AJUSTES DO FOOTER --- */
+.footer {
+    position: relative; 
+    margin-top: 3rem; 
+    width: 100%;
+    /* Mantém as cores e padding base */
+    color: var(--tertiary-color);
+    background-color: var(--bg-color);
+    padding: 20px 20px;
+    border-top: 1px solid var(--card-bg-color); /* Borda sutil */
+    font-size: 0.8rem;
+}
+
+/* NOVO: Contêiner que alinha o conteúdo horizontalmente */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os blocos */
+    align-items: center;
+    max-width: 90rem; /* Limite de largura para centralizar o conteúdo */
+    margin: 0 auto; 
+    padding: 0 1rem;
+}
+
+/* Informações e Copyright */
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.footer-tagline {
+    color: var(--secondary-color); /* Destaque a tagline */
+}
+
+/* Links */
+.footer-links {
+    list-style: none; 
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Espaçamento mais moderno entre os links */
+}
+
+.footer-links a {
+    color: var(--tertiary-color); 
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Versão */
+.footer-version {
+    color: var(--tertiary-color);
+    text-align: right;
+}
+
+.footer-version p {
+    margin: 0;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
+
+/* Telas com largura de 1200px ou menos (Ex: Laptops Maiores) */
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr); /* Muda para 3 colunas */
+    }
+}
+
+/* Telas com largura de 768px ou menos (Ex: Tablets) */
+@media (max-width: 768px) {
+    header { 
+        flex-direction: column; 
+        padding: 1rem; 
+    }
+
+    header h1 { 
+        text-align: center; 
+        margin-bottom: 1rem; 
+    }
+    
+    div input { 
+        width: 90vw; 
+        font-size: 1.2rem; 
+    }
+
+    .card-container { 
+        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas */
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    article:hover { 
+        transform: none; 
+    }
+
+    .footer-content {
+        flex-direction: column; /* Empilha o conteúdo */
+        text-align: center;
+        gap: 15px; /* Espaçamento vertical entre os blocos */
+    }
+
+    .footer-links {
+        justify-content: center; /* Centraliza os links no mobile */
+    }
+
+    .footer-info{
+        text-align: center;
+    }
+}
+
+/* Telas com largura de 480px ou menos (Ex: Telemóveis) */
+@media (max-width: 480px) {
+    header h1 { 
+        font-size: 1rem; 
+        max-width: 70%; 
+        word-wrap: break-word; 
+    }
+
+    div input, 
+    div input::placeholder {
+        font-size: 1rem; 
+    }
+
+    main {
+        grid-template-columns: 1fr; /* 1 coluna em ecrãs de telemóvel */
+        gap: 1rem; 
+    }
+
+    article h2 { 
+        font-size: 1.3rem; 
+    }
+
+    div { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+
+    .footer { 
+        display: none; 
+    }
+
+    button { 
+        margin-top: 1rem; 
+    }
+}

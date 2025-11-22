@@ -1,0 +1,121 @@
+[
+{
+    "nome": "Frontend",
+    "descrição": "Cria interfaces visuais e tudo o que o usuário vê e interage em um site ou aplicação.",
+    "tecnologia": "HTML, CSS, JavaScript, frameworks (React/Vue/Angular), responsividade, Git."
+},
+
+{
+    "nome": "Backend",
+    "descrição": "Desenvolve a lógica, servidores, APIs e bancos de dados que sustentam aplicações.",
+    "tecnologia": "Linguagens (Node.js, Python, Java), bancos de dados, APIs, segurança, Git."
+},
+
+{
+    "nome": "Full Stack",
+    "descrição": "Atua no front-end e no back-end, conseguindo criar aplicações completas.",
+    "tecnologia": "HTML, CSS, JS, frameworks front/back, bancos de dados, Git, APIs."
+},
+
+{
+    "nome": "Mobile",
+    "descrição": "Cria aplicativos para smartphones e tablets (Android e iOS).",
+    "tecnologia": "Kotlin/Swift ou Flutter/React Native, UI móvel, APIs, Git."
+},
+
+{
+    "nome": "UX/UI Design",
+    "descrição": "Planeja a experiência e cria interfaces visuais intuitivas e agradáveis.",
+    "tecnologia": "Design thinking, Figma, prototipação, usabilidade, pesquisa com usuários."
+},
+
+{
+    "nome": "DevOps",
+    "descrição": "Automatiza e otimiza o processo de desenvolvimento, integração, entrega e deploy.",
+    "tecnologia": "Linux, Docker, Kubernetes, CI/CD, nuvem (AWS/Azure/GCP), automação."
+},
+
+{
+    "nome": "QA/Testes de Software",
+    "descrição": "Garante a qualidade do software através de testes e validação.",
+    "tecnologia": "Testes manuais/automatizados, Selenium/Playwright, lógica, documentação."
+},
+
+{
+    "nome": "Segurança da Informação (Cybersec)",
+    "descrição": "Protege sistemas e dados contra ataques, falhas e vulnerabilidades.",
+    "tecnologia": "Redes, criptografia, Linux, testes de invasão, firewalls, normas de segurança."
+},
+
+{
+    "nome": "Ciência de Dados",
+    "descrição": "Analisa dados para gerar insights e apoiar decisões estratégicas.",
+    "tecnologia": "Python/R, estatística, machine learning, SQL, visualização de dados."
+},
+
+{
+    "nome": "Análise de Dados",
+    "descrição": "Coleta, organiza e interpreta dados para relatórios e métricas.",
+    "tecnologia": "Excel/SQL, Python, Power BI/Tableau, estatística básica."
+},
+
+{
+    "nome": "Machine Learning / IA",
+    "descrição": "Cria modelos inteligentes capazes de reconhecer padrões e prever resultados.",
+    "tecnologia": "Python, algoritmos, matemática, TensorFlow/PyTorch, dados."
+},
+
+{
+    "nome": "Cloud Computing",
+    "descrição": "Gerencia aplicações e infraestrutura na nuvem.",
+    "tecnologia": "AWS/Azure/GCP, redes, bancos de dados, infraestrutura, automação."
+},
+
+{
+    "nome": "Engenharia de Software",
+    "descrição": "Planeja, estrutura e desenvolve sistemas de software escaláveis e organizados.",
+    "tecnologia": "Algoritmos, padrões de projeto, versionamento, metodologias ágeis."
+},
+
+{
+    "nome": "Banco de Dados / DBA",
+    "descrição": "Administra bancos de dados para garantir desempenho, segurança e disponibilidade.",
+    "tecnologia": "SQL, NoSQL, modelagem de dados, backups, otimização, segurança."
+},
+
+{
+    "nome": "Engenharia de Dados",
+    "descrição": "Constrói pipelines e estruturas para manipular grandes volumes de dados.",
+    "tecnologia": "Python/Scala, ETL, SQL, Spark, nuvem, bancos de dados."
+},
+
+{
+    "nome": "Game Development",
+    "descrição": "Desenvolve jogos digitais para diversas plataformas.",
+    "tecnologia": "Unity/Unreal, C#/C++, lógica, física aplicada, design de jogos."
+},
+
+{
+    "nome": "Product Manager",
+    "descrição": "Responsável por orientar a estratégia de um produto digital, identificando necessidades dos usuários, acompanhando o desenvolvimento e resultados.",
+    "tecnologia": "UX, métricas, comunicação, metodologias ágeis, roadmap, negócios."
+},
+
+{
+    "nome": "Suporte Técnico / Help Desk",
+    "descrição": "Resolve problemas técnicos e auxilia usuários e equipes no uso de sistemas.",
+    "tecnologia": "Sistemas operacionais, redes básicas, troubleshooting, atendimento."
+},
+
+{
+    "nome": "Inteligência Artificial Generativa",
+    "descrição": "Desenvolve sistemas capazes de criar textos, imagens, áudio e outros conteúdos a partir de modelos de IA avançados.",
+    "tecnologia": "Python, machine learning, modelos generativos (Transformers, GANs), APIs de IA, ética e tratamento de dados."
+},
+
+{
+    "nome": "IoT (Internet das Coisas)",
+    "descrição": "Desenvolve sistemas conectados entre dispositivos físicos e digitais.",
+    "tecnologia": "Eletrônica básica, C/C++, redes, MQTT, sensores, segurança."
+}
+]
