@@ -3,7 +3,8 @@
 
 ## 📌 Sobre o Projeto
 
-Este projeto tem como objetivo ajudar iniciantes a entenderem as principais áreas da Tecnologia da Informação e as ferramentas básicas que cada uma delas costuma utilizar.
+Este projeto foi desenvolvido durante as aulas da Imersão Dev com Google Gemini da Alura, e tem como objetivo ajudar iniciantes a entenderem as principais áreas da Tecnologia da Informação e as ferramentas básicas que cada uma delas costuma utilizar.
+
 A ideia é oferecer uma visão clara, simples e acessível, facilitando a escolha do primeiro caminho na área de TI.
 
 ---
@@ -13,7 +14,7 @@ A ideia é oferecer uma visão clara, simples e acessível, facilitando a escolh
 * Explicar de forma direta o que faz cada área de TI.
 * Apresentar tecnologias, ferramentas e conhecimentos essenciais de cada área.
 * Guiar iniciantes que não sabem por onde começar.
-* Tornar o aprendizado mais simples e menos assustador.
+* Tornar o aprendizado mais simples.
 
 ---
 
@@ -49,6 +50,7 @@ A ideia é oferecer uma visão clara, simples e acessível, facilitando a escolh
 ## 🚀 Como acessar
 
 Basta abrir o site no navegador e navegar pelas áreas listadas.
+Link do site: https://mikaelelima.github.io/imersaoDevAlura/
 
 ---
 
