@@ -1,3 +1,50 @@
-Projeto desenvolvido no acompanhamento da Imersão Dev Alura
+🧩 Guia de Áreas de TI — Entendendo o Caminho Certo
 
-Nesse projeto foi ensinado a dar os primeiros passos na programação, utilizando a IA do Google - Gemini - para criar uma landing page com HTML, CSS e JavaScript.
+📌 Sobre o Projeto
+
+Este projeto tem como objetivo ajudar iniciantes a entenderem as principais áreas da Tecnologia da Informação e as ferramentas básicas que cada uma delas costuma utilizar.
+A ideia é oferecer uma visão clara, simples e acessível, facilitando a escolha do primeiro caminho na área de TI.
+
+🎯 Objetivos
+
+Explicar de forma direta o que faz cada área de TI.
+Apresentar tecnologias, ferramentas e conhecimentos essenciais de cada área.
+Guiar iniciantes que não sabem por onde começar.
+Tornar o aprendizado mais simples.
+
+🧠 O que você encontra no site
+
+Descrição das principais áreas de TI
+Tecnologias e ferramentas básicas de cada área
+Conteúdo objetivo e fácil de entender
+Interface simples e organizada para navegação
+
+🗂 Exemplos de áreas abordadas
+
+Desenvolvimento Web
+Segurança da Informação
+Banco de Dados
+Infraestrutura e Redes
+Ciência de Dados
+Product Manage
+
+🖥️ Tecnologias utilizadas (do site)
+
+HTML5
+CSS3
+JavaScript
+
+🚀 Como acessar
+
+Basta abrir o site no navegador e navegar pelas áreas listadas.
+link
+
+📌 Público-alvo
+
+Pessoas iniciando na área de T
+Quem ainda está indeciso sobre qual área seguir
+Estudantes e curiosos em tecnologia
+
+👤 Autor(a)
+
+Mikaele Lima
